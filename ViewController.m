@@ -93,6 +93,7 @@ static NSInteger const kTag = 10000;
     //按钮横向间的间距
     CGFloat kBtnPading_Y = kBtnX + 20 + kBtnWidth;
 
+    //此处将九宫格列为 3 * 3的格式
     for (int i = 0; i < kHorizontalNumber; i ++)
     {
         for (int j = 0; j < kVerticalNumber; j ++)
@@ -260,7 +261,7 @@ static NSInteger const kTag = 10000;
     }
 }
 
-
+//开关控制
 - (void)switchClick:(UISwitch *)pswitch
 {
     if (pswitch.isOn)
@@ -372,7 +373,6 @@ static NSInteger const kTag = 10000;
     else
     {
         //其他操作
-        
         TestViewController *testVc = [[TestViewController alloc] init];
         [self.navigationController pushViewController:testVc animated:YES];
     }
